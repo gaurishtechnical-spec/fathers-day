@@ -197,7 +197,19 @@ opacity:1;
 }
 }
 
-/* Photo Card Styling */
+@media(max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.quote{
+font-size:1.3rem;
+}
+
+}
+
+/* ADD BELOW THIS */
 
 .photo-card{
     text-align:center;
@@ -210,9 +222,8 @@ opacity:1;
     font-size:14px;
 }
 
-/* Optional hover effect */
-
-.photo-card:hover p{
-    transform:scale(1.05);
+.photo-card:hover{
+    transform:translateY(-5px);
     transition:0.3s;
 }
+
