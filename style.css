@@ -197,14 +197,22 @@ opacity:1;
 }
 }
 
-@media(max-width:768px){
+/* Photo Card Styling */
 
-.hero h1{
-font-size:2rem;
+.photo-card{
+    text-align:center;
 }
 
-.quote{
-font-size:1.3rem;
+.photo-card p{
+    margin-top:10px;
+    color:#FFD700;
+    font-weight:600;
+    font-size:14px;
 }
 
+/* Optional hover effect */
+
+.photo-card:hover p{
+    transform:scale(1.05);
+    transition:0.3s;
 }
