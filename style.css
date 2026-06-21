@@ -1,0 +1,210 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background:url("img1.jpg") center/cover;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+font-family:Cinzel;
+color:#FFD700;
+}
+
+.hero h3{
+font-size:1.5rem;
+margin-bottom:15px;
+}
+
+.hero p{
+margin:20px 0;
+font-size:1.2rem;
+}
+
+.gold-btn{
+background:#FFD700;
+color:black;
+padding:15px 30px;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+
+.quote{
+padding:80px 20px;
+text-align:center;
+font-size:2rem;
+}
+
+.gallery{
+padding:80px 20px;
+}
+
+.gallery h2{
+text-align:center;
+margin-bottom:40px;
+color:#FFD700;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:350px;
+object-fit:cover;
+border:3px solid #FFD700;
+border-radius:15px;
+transition:.5s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.timeline{
+padding:80px 20px;
+}
+
+.timeline h2{
+text-align:center;
+color:#FFD700;
+margin-bottom:50px;
+}
+
+.timeline-item{
+margin:30px auto;
+max-width:700px;
+padding:25px;
+background:#111;
+border-left:5px solid #FFD700;
+}
+
+.letter{
+padding:80px 20px;
+}
+
+.letter h2{
+text-align:center;
+margin-bottom:30px;
+color:#FFD700;
+}
+
+.letter-box{
+max-width:800px;
+margin:auto;
+background:#111;
+padding:40px;
+border-radius:20px;
+line-height:2;
+}
+
+.surprise{
+padding:100px 20px;
+text-align:center;
+}
+
+#surpriseBtn{
+padding:18px 40px;
+font-size:20px;
+background:#FFD700;
+border:none;
+border-radius:50px;
+cursor:pointer;
+}
+
+#surpriseMessage{
+display:none;
+margin-top:40px;
+animation:fade 1s;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#111;
+}
+
+#musicBtn{
+position:fixed;
+top:20px;
+right:20px;
+z-index:1000;
+padding:12px 20px;
+background:#FFD700;
+border:none;
+border-radius:50px;
+cursor:pointer;
+}
+
+.heart{
+position:fixed;
+color:red;
+font-size:25px;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:1;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.quote{
+font-size:1.3rem;
+}
+
+}
